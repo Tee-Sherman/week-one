@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@300;400;500;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    background-color: rgb(157, 168, 174);
+
+}
+
+.logo {
+    cursor: pointer;
+    border-radius: 85%;
+    height: 5.125rem;
+    filter: drop-shadow(5px 3px 3px gray)
+}
+
+
+
+.navbar a {
+    text-decoration: none;
+    font-family: 'Red hat display', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+
+
+
+}
+
+.navbar a:hover {
+    color: rgb(51, 155, 216);
+}
+body{
+    background-color: rgb(210, 218, 225);
+}
+.hero {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgb(221, 221, 206);
+    filter: drop-shadow(5px 3px 3px gray);
+    padding-bottom: 60px;
+}
+
+.hero-left {
+    display: flex;
+    flex-direction: column;
+    max-width: 500px;
+
+}
+
+
+.hero-left h1 {
+    font-size: 70px;
+    font-weight: bold;
+    text-align: center;
+    color: navy;
+    font-family: 'Red hat display', sans-serif;
+
+}
+
+.hero-left h1:hover {
+    color: rgb(57, 54, 155);
+    cursor: pointer;
+
+}
+
+.hero-left button {
+
+    display: inline-block;
+    padding: 0.8em 1.5em;
+    margin: 0 0.1em 0.1em 0;
+    border: 0.16em solid rgba(255, 255, 255, 0);
+    border-radius: 2em;
+    box-sizing: border-box;
+    text-decoration: none;
+    color: rgb(214, 214, 214);
+    background-color: rgb(47, 103, 153);
+    font-size: 22px;
+    font-weight: bold;
+    font-family: 'Red hat display', sans-serif;
+    transition: all 0.2s;
+    box-shadow: 5px 5px 5px gray;
+
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.hero-left button:hover {
+    background-color: blue;
+    cursor: pointer;
+}
+
+
+.hero-left h2 {
+    font-size: 32px;
+    font-weight: 700;
+    font-family: 'Red hat display', sans-serif;
+    text-align: center;
+    padding-bottom: 30px;
+}
+
+.hero-left p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 30px;
+    font-family: 'Red hat display', sans-serif;
+    text-align: center;
+    padding-bottom: 60px;
+}
+
+.hero-right {
+    padding-bottom: 30px;
+    padding-top: 30px;
+    max-width: 100%;
+}
+
+.hero-right img {
+    width: 100%;
+    clip-path: circle(50%);
+    border: 10px solid black;
+    border-radius: 50%;
+    background-color: rgb(210, 218, 225);
+
+}
+
+.light-text{
+    color: white;
+}
+
+.services {
+    background-color: rgb(210, 218, 225);
+    
+    
+   
+}
+
+.services h2 {
+    text-align: center;
+    font-family: 'Red hat display', sans-serif;
+    font-size: 32px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor: pointer;
+
+}
+
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 1rem;
+    margin: auto;
+    filter: drop-shadow(5px 3px 3px gray);
+    max-width: 100%;
+    
+}
+
+.card {
+
+    border-radius: 30px;
+    padding: .5rem;
+    background-color: rgb(242, 242, 232);
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    max-width: 100;
+}
+
+.card h2,
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    cursor:pointer;
+
+}
+
+.card p {
+    font-family: 'Red hat display', sans-serif;
+    font-weight: 600;
+    font-size: 15px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.card img {
+    padding: 10px 10px;
+    filter: drop-shadow(5px 3px 3px gray)
+    
+}
+
+.locations {
+    background-color: rgb(210, 218, 225);
+    box-sizing: border-box;
+    max-width: 100%;
+    
+}
+
+.locations h1 {
+    font-family: 'Red hat display', sans-serif;
+    font-size: 42px;
+    padding-top: 60px;
+    text-align: center;
+
+}
+
+.locations h2 {
+    font-family: 'Red hat display', sans-serif;
+    font-size: 35px;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.locations img{
+   display: inline-block;
+   justify-content: space-evenly;
+   align-items: center;
+   filter:drop-shadow(5px 3px 3px gray)
+}
+footer{
+    background-color: navy;
+}
+footer p {
+    font-family: 'Red hat display', sans-serif;
+    font-size: 35px;
+    color: white;
+    text-align: center;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+@media screen and (max-width: 800px) {
+    
+    body {
+    font-size: .9em;
+    text-align: center;
+    /*  
+    	that will make fonts 150% larger, if you want smaller fonts on 	mobile use something like .9em for 90% smaller 
+    */
+    }
+
+    .cards{
+       display: inline;
+       
+    }
+    
+    .hero{
+        display: inline;
+        margin-inline: auto;
+     
+    }
+    .button{
+        max-width: 100%;
+    }
+    .logo{
+        max-width: 5rem;
+    }
+
+    img {
+    	max-width: 100%;
+    	height: auto;
+    }
+    div {
+    	float: none;
+    	width: 100%;
+    	height: auto;	
+    }
+   
+    
+    
+    }
